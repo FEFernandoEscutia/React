@@ -10,7 +10,7 @@ export const Book = ({ number, title, author, img, getBook, id }) => { //?En est
       <h2>{title}</h2>
       <h4>{author.toUpperCase()}</h4>     
       <span className="number">{`# ${number}`}</span>                    
-      <button onClick={()=>getBook(id)}>Click me!</button>   {/* Aqui se esta pasando el id del libro al metodo getBook que esta en el componente BoockList */}
+      <button className="Button" onClick={()=>getBook(id)}>Click me!</button>   {/* Aqui se esta pasando el id del libro al metodo getBook que esta en el componente BoockList */}
     </article>
   );
 };

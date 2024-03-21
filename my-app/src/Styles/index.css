@@ -3,7 +3,7 @@
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  background: #f1f5f8;
+  background: #16232c;
   color: #222;
 }
 
@@ -23,11 +23,16 @@ body {
       
   }
   .book {
-    background: #fff;
+    background: #23213a;
     border-radius: 1rem;
-    padding: 2rem;
+    padding: 3rem;
     text-align: center;
     position: relative;
+    box-shadow: 0 5px 20px rgb(116, 116, 116);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
   }
 
 .book img {
@@ -65,4 +70,26 @@ body {
   text-align: center;
   margin-top: 4rem;
   text-transform: capitalize;
+  font-size: 2rem;
+  color: #fff;
+  letter-spacing: 2px;
+  font-weight: 400;
+  line-height: 1.25;
+  margin-bottom: 2rem;
+}
+
+.Button{
+  display: block;
+  margin: 0 auto;
+  margin-top: 2rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #5e5c5c;
+  color: #fff;
+  font-size: 1rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  transition: background-color 0.3s ease;
+  position: relative;
 }
