@@ -1,29 +1,19 @@
-import { socialLinks } from "../data.js";
+import { socialLinks, pageLinks } from "../data.js";
 
 const Footer = () => {
   return (
     <footer className="section footer">
       <ul className="footer-links">
-        <li>
-          <a href="#home" className="footer-link">
-            home
-          </a>
-        </li>
-        <li>
-          <a href="#about" className="footer-link">
-            about
-          </a>
-        </li>
-        <li>
-          <a href="#services" className="footer-link">
-            services
-          </a>
-        </li>
-        <li>
-          <a href="#featured" className="footer-link">
-            featured
-          </a>
-        </li>
+        {pageLinks.map((link) => {
+          const { id, href, text } = link;
+          return (
+            <li key={id}>
+              <a href={href} className="footer-link">
+                {text}
+              </a>
+            </li>
+          );
+        })}
       </ul>
       <ul className="footer-icons">
         {socialLinks.map((link) => {
@@ -32,7 +22,7 @@ const Footer = () => {
               <a
                 href={link.href}
                 target="_blank"
-                rel="noreferrer" 
+                rel="noreferrer"
                 className="footer-icon"
               >
                 <i className={link.icon}></i>
