@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const Tour = ({ id, name, info, image, price, deleteT }) => {
+const Tour = ({ id, name, info, image, price, deleteST }) => {
   const [readMore, setReadMore] = useState(false);
 
   return (
@@ -20,7 +20,7 @@ const Tour = ({ id, name, info, image, price, deleteT }) => {
         <button
           className="btn delete-btn btn-block"
           type="button"
-          onClick={() => deleteT(id)}
+          onClick={() => deleteST(id)}
         >
           Take it off!!
         </button>
